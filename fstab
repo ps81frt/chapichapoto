@@ -1,3 +1,5 @@
+# /etc/fstab : configuration des systèmes de fichiers à monter au démarrage
+
 # Partition EFI en vfat
 /dev/disk/by-uuid/20D5-1579                            /boot/efi       vfat    umask=0077              0       1
 
