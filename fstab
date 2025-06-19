@@ -1,0 +1,11 @@
+# Partition EFI en vfat
+/dev/disk/by-uuid/20D5-1579                            /boot/efi       vfat    umask=0077              0       1
+
+# Partition /boot en ext4
+/dev/disk/by-uuid/d80e72aa-f9a3-44f5-898e-97b8619d829a /boot           ext4    defaults                0       2
+
+# Volume logique root dans LVM
+/dev/mapper/vgxubuntu-root                              /              ext4    defaults,discard        0       1
+
+# Volume logique swap dans LVM
+/dev/mapper/vgxubuntu-swap_1                            none           swap    sw                      0       0
